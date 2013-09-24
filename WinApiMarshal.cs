@@ -1343,95 +1343,95 @@ namespace WinapiMarshal
     #endregion
     public class Functions
     {
-        Functions()
+        public Functions()
         {
             //Retrieve all WinApi Function Pointers
             InitializeWinAPI();
         }
         #region delegatefunctionality
         #region delegates
-        public static DelegateGetTickCount64 pFuncGetTickCount64;
-        public static DelegateGetTickCount pFuncGetTickCount;
-        public static DelegateMsiGetPatchInfoEx pFuncMsiGetPatchInfoEx;
-        public static DelegateMsiEnumPatchesEx pFuncMsiEnumPatchesEx;
-        public static DelegateEnumServicesStatusEx pFuncEnumServicesStatusEx;
-        public static DelegateOpenSCManager pFuncOpenSCManager;
-        public static DelegateCloseServiceHandle pFuncCloseServiceHandle;
+        public DelegateGetTickCount64 pFuncGetTickCount64;
+        public DelegateGetTickCount pFuncGetTickCount;
+        public DelegateMsiGetPatchInfoEx pFuncMsiGetPatchInfoEx;
+        public DelegateMsiEnumPatchesEx pFuncMsiEnumPatchesEx;
+        public DelegateEnumServicesStatusEx pFuncEnumServicesStatusEx;
+        public DelegateOpenSCManager pFuncOpenSCManager;
+        public DelegateCloseServiceHandle pFuncCloseServiceHandle;
 
-        public static DelegateReadFile pFuncReadFile;
-        public static DelegateGetIpNetTable pFuncGetIpNetTable;
-        public static DelegateUnlockFile pFuncUnlockFile;
-        public static DelegateNetSessionEnum pFuncNetSessionEnum;
-        public static DelegateGetUdpStatistics pFuncGetUdpStatistics;
-        public static DelegateGetUdpTable pFuncGetUdpTable;
-        public static DelegateGetTcpStatistics pFuncGetTcpStatistics;
-        public static DelegateGetTcpTable pFuncGetTcpTable;
-        public static DelegateGetProcessHeap pFuncGetProcessHeap;
-        public static DelegateFormatMessage pFuncFormatMessage;
-        public static DelegateGetExtendedTcpTable pFuncGetExtendedTcpTable;
-        public static DelegateGetExtendedUdpTable pFuncGetExtendedUdpTable;
+        public DelegateReadFile pFuncReadFile;
+        public DelegateGetIpNetTable pFuncGetIpNetTable;
+        public DelegateUnlockFile pFuncUnlockFile;
+        public DelegateNetSessionEnum pFuncNetSessionEnum;
+        public DelegateGetUdpStatistics pFuncGetUdpStatistics;
+        public DelegateGetUdpTable pFuncGetUdpTable;
+        public DelegateGetTcpStatistics pFuncGetTcpStatistics;
+        public DelegateGetTcpTable pFuncGetTcpTable;
+        public DelegateGetProcessHeap pFuncGetProcessHeap;
+        public DelegateFormatMessage pFuncFormatMessage;
+        public DelegateGetExtendedTcpTable pFuncGetExtendedTcpTable;
+        public DelegateGetExtendedUdpTable pFuncGetExtendedUdpTable;
 
-        public static DelegateFindFirstStreamW pFuncFindFirstStreamW;
-        public static DelegateFindNextStreamW pFuncFindNextStreamW;
-        public static DelegateFindClose pFuncFindClose;
-        public static DelegateFindFirstFile pFuncFindFirstFile;
-        public static DelegateFindNextFile pFuncFindNextFile;
+        public DelegateFindFirstStreamW pFuncFindFirstStreamW;
+        public DelegateFindNextStreamW pFuncFindNextStreamW;
+        public DelegateFindClose pFuncFindClose;
+        public DelegateFindFirstFile pFuncFindFirstFile;
+        public DelegateFindNextFile pFuncFindNextFile;
 
-        public static DelegateOpenEventLog pFuncOpenEventLog;
-        public static DelegateReadEventLog pFuncReadEventLog;
+        public DelegateOpenEventLog pFuncOpenEventLog;
+        public DelegateReadEventLog pFuncReadEventLog;
 
-        public static DelegateConvertSidToStringSid pFuncConvertSidToStringSid;
-        public static DelegateLookupAccountName pFuncLookupAccountName;
+        public DelegateConvertSidToStringSid pFuncConvertSidToStringSid;
+        public DelegateLookupAccountName pFuncLookupAccountName;
 
-        public static DelegateNetUserEnum pFuncNetUserEnum;
-        public static DelegateNetApiBufferFree pFuncNetApiBufferFree;
-        public static DelegateDsGetDcName pFuncDsGetDcName;
-        public static DelegateNetLocalGroupGetMembers pFuncNetLocalGroupGetMembers;
-        public static DelegateNetLocalGroupEnum pFuncNetLocalGroupEnum;
-        public static DelegateNetUserGetInfo pFuncNetUserGetInfo;
+        public DelegateNetUserEnum pFuncNetUserEnum;
+        public DelegateNetApiBufferFree pFuncNetApiBufferFree;
+        public DelegateDsGetDcName pFuncDsGetDcName;
+        public DelegateNetLocalGroupGetMembers pFuncNetLocalGroupGetMembers;
+        public DelegateNetLocalGroupEnum pFuncNetLocalGroupEnum;
+        public DelegateNetUserGetInfo pFuncNetUserGetInfo;
 
-        public static DelegateRegOpenKeyEx pFuncRegOpenKeyEx;
-        public static DelegateRegQueryValueEx pFuncRegQueryValueExA;
-        public static DelegateRegQueryReflectionKey pFuncRegQueryReflectionKey;
-        public static DelegateRegCloseKey pFuncRegCloseKey;
-        public static DelegateRegQueryInfoKey pFuncRegQueryInfoKeyA;
-        public static DelegateRegEnumValue pFuncRegEnumValueA;
-        public static DelegateRegEnumKeyEx pFuncRegEnumKeyExA;
-        public static DelegateRegQueryValueEx pFuncRegQueryValueExW;
-        public static DelegateRegQueryInfoKey pFuncRegQueryInfoKeyW;
-        public static DelegateRegEnumValue pFuncRegEnumValueW;
-        public static DelegateRegEnumKeyEx pFuncRegEnumKeyExW;
+        public DelegateRegOpenKeyEx pFuncRegOpenKeyEx;
+        public DelegateRegQueryValueEx pFuncRegQueryValueExA;
+        public DelegateRegQueryReflectionKey pFuncRegQueryReflectionKey;
+        public DelegateRegCloseKey pFuncRegCloseKey;
+        public DelegateRegQueryInfoKey pFuncRegQueryInfoKeyA;
+        public DelegateRegEnumValue pFuncRegEnumValueA;
+        public DelegateRegEnumKeyEx pFuncRegEnumKeyExA;
+        public DelegateRegQueryValueEx pFuncRegQueryValueExW;
+        public DelegateRegQueryInfoKey pFuncRegQueryInfoKeyW;
+        public DelegateRegEnumValue pFuncRegEnumValueW;
+        public DelegateRegEnumKeyEx pFuncRegEnumKeyExW;
 
 
-        public static DelegateNtQueryInformationProcess pFuncNtQueryProcInfo;
-        public static DelegateNtOpenProcess pFuncNtOpenProcess;
-        public static DelegateReadProcessMemory pFuncReadProcessMemory;
-        public static DelegateVirtualQueryEx pFuncVirtualQueryEx;
-        public static DelegateVirtualQueryEx64 pFuncVirtualQueryEx64;
-        public static DelegateGetCurrentProcess pFuncGetCurrentProcess;
-        public static DelegateGetProcessTimes pFuncGetProcessTimes;
-        public static DelegateProcess32First pFunc;
-        public static DelegateProcess32First pFuncProcess32First;
-        public static DelegateProcess32Next pFuncProcess32Next;
-        public static DelegateCreateToolhelp32Snapshot pFuncCreateToolhelp32Snapshot;
-        public static DelegateGetCurrentProcessId pFuncGetCurrentProcessId;
-        public static DelegateModule32First pFuncModule32First;
-        public static DelegateModule32Next pFuncModule32Next;
-        public static DelegateGetSystemInfo pFuncGetSystemInfo;
-        public static DelegateCreateFile pFuncCreateFile;
-        public static DelegateCreateDirectory pFuncCreateDirectory;
-        public static DelegateCopyFile pFuncCopyFile;
-        public static DelegateOpenProcessToken pFuncOpenProcessToken;
-        public static DelegateAdjustTokenPrivileges pFuncAdjustTokenPrivileges;
-        public static DelegateLookupPrivilegeValue pFuncLookupPrivilegeValue;
-        public static DelegateDllGetVersion pFuncDllGetVersion;
-        public static DelegateGetFileVersionInfo pFuncGetFileVersionInfo;
-        public static DelegateGetFileVersionInfoSize pFuncGetFileVersionInfoSize;
-        public static DelegateVerQueryValue pFuncVerQueryValue;
-        public static DelegateEnumProcesses pFuncEnumProcesses;
-        public static DelegateCloseHandle pFuncCloseHandle;
-        public static DelegateOpenProcess pFuncOpenProcess;
-        public static DelegateReadProcessMemory64 pFuncReadProcessMemory64;
+        public DelegateNtQueryInformationProcess pFuncNtQueryProcInfo;
+        public DelegateNtOpenProcess pFuncNtOpenProcess;
+        public DelegateReadProcessMemory pFuncReadProcessMemory;
+        public DelegateVirtualQueryEx pFuncVirtualQueryEx;
+        public DelegateVirtualQueryEx64 pFuncVirtualQueryEx64;
+        public DelegateGetCurrentProcess pFuncGetCurrentProcess;
+        public DelegateGetProcessTimes pFuncGetProcessTimes;
+        public DelegateProcess32First pFunc;
+        public DelegateProcess32First pFuncProcess32First;
+        public DelegateProcess32Next pFuncProcess32Next;
+        public DelegateCreateToolhelp32Snapshot pFuncCreateToolhelp32Snapshot;
+        public DelegateGetCurrentProcessId pFuncGetCurrentProcessId;
+        public DelegateModule32First pFuncModule32First;
+        public DelegateModule32Next pFuncModule32Next;
+        public DelegateGetSystemInfo pFuncGetSystemInfo;
+        public DelegateCreateFile pFuncCreateFile;
+        public DelegateCreateDirectory pFuncCreateDirectory;
+        public DelegateCopyFile pFuncCopyFile;
+        public DelegateOpenProcessToken pFuncOpenProcessToken;
+        public DelegateAdjustTokenPrivileges pFuncAdjustTokenPrivileges;
+        public DelegateLookupPrivilegeValue pFuncLookupPrivilegeValue;
+        public DelegateDllGetVersion pFuncDllGetVersion;
+        public DelegateGetFileVersionInfo pFuncGetFileVersionInfo;
+        public DelegateGetFileVersionInfoSize pFuncGetFileVersionInfoSize;
+        public DelegateVerQueryValue pFuncVerQueryValue;
+        public DelegateEnumProcesses pFuncEnumProcesses;
+        public DelegateCloseHandle pFuncCloseHandle;
+        public DelegateOpenProcess pFuncOpenProcess;
+        public DelegateReadProcessMemory64 pFuncReadProcessMemory64;
 
         #endregion
         #region funcStrings
@@ -1528,7 +1528,7 @@ namespace WinapiMarshal
         #endregion
         #endregion
         //Import all WinAPI Functions
-        static void InitializeWinAPI()
+        void InitializeWinAPI()
         {
             IntPtr hLibNtDll = LoadLibrary(ntDll);
             IntPtr hLibKernel = LoadLibrary(kernel);
@@ -1822,7 +1822,8 @@ namespace WinapiMarshal
         [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
         protected override bool ReleaseHandle()
         {
-            return Functions.pFuncFindClose(handle);
+            Functions func = new Functions();
+            return func.pFuncFindClose(handle);
         }
     }
 }
